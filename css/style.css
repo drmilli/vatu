@@ -1946,6 +1946,8 @@ hr {
     padding: 60px 30px;
     margin-bottom: 30px;
     position: relative;
+    background: #323232;
+    color: #fff;
 }
 .services .item:hover {
     background: #323232;
@@ -1961,7 +1963,7 @@ hr {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 15px;
-    color: #323232;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -1974,6 +1976,7 @@ hr {
 
 .services .item p {
     margin-bottom: 0;
+    color: #fff;
 }
 .services .item img {
     width: 60px;
@@ -3379,6 +3382,22 @@ button.mfp-arrow {
 }
 .play-button.color .circle-fill circle {
     fill: #b19777;
+}
+
+/* Bouncing play icon */
+.polygon i {
+    display: inline-block;
+    animation: play-bounce 1s ease-in-out infinite;
+}
+
+@keyframes play-bounce {
+    0%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-8px); }
+    60% { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .polygon i { animation: none; }
 }
 
 /* video gallery */
